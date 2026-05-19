@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="description" content="Extraction d'obstacles aériens (OSM → EPLF / ATAK)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Obstacles" />
+    <meta name="theme-color" content="#1f2937" />
+    <link rel="manifest" href="/OBSTACLES/manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="/OBSTACLES/favicon.png" />
+    <link rel="apple-touch-icon" href="/OBSTACLES/icons/icon-192.png" />
+    <title>Obstacles Aériens</title>
+    <link href="/OBSTACLES/_app/immutable/entry/start.CkZu41qh.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/DxL8W81O.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/DFubwv1r.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/CHKMQZ64.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/entry/app.t9MKARy5.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/D40NBVNv.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/oCXi6aVn.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/B3yrk9W8.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/nodes/0.2noL96WH.js" rel="modulepreload">
+		<link href="/OBSTACLES/_app/immutable/chunks/amQe8pwt.js" rel="modulepreload">
+		
+		<link href="/OBSTACLES/_app/immutable/assets/0.BEGY3A2H.css" rel="stylesheet">
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_3ffhcm = {
+						base: "/OBSTACLES",
+						assets: "/OBSTACLES"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/OBSTACLES/_app/immutable/entry/start.CkZu41qh.js"),
+						import("/OBSTACLES/_app/immutable/entry/app.t9MKARy5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/OBSTACLES/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+  </body>
+</html>
