@@ -1,6 +1,6 @@
 {
-  "name": "Obstacles Aériens",
-  "short_name": "Obstacles",
+  "name": "Obstacle",
+  "short_name": "Obstacle",
   "description": "Extraction d'obstacles aériens depuis OpenStreetMap (PWA hors-ligne)",
   "start_url": "./",
   "scope": "./",
